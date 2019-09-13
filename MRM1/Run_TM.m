@@ -222,9 +222,8 @@ switch TM
         % Number of iterations
         MaxIter = 10000;
         % Optimization gradient
-        Par.Grad= 'Schirmer'; % These are exact gradients, but slow computation. Change to '1st' to see (suboptimal) progress faster. 
-        Par.Grad = '1st';
-        
+        Par.Grad= 'Schirmer'; % These are exact gradients, but slow computation. 
+
         % Parameter specific to the 'blOCh__QN_LBFGS_SAR' method
         Par.Constr.RFpeak.Type = 'bnd';% Boundary type 'bnd' means the hard limit of fmincon()
         % Physical limit value
